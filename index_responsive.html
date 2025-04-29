@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad Computarizada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .navbar {
+            background-color: rgba(52, 58, 64, 0.9) !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: #f8f9fa !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ffffff !important;
+        }
+
+        .container {
+            background-color: rgba(33, 37, 41, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        h1,
+        h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: #17a2b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #20c997;
+        }
+
+        .mosaic-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .mosaic-item {
+            background-color: rgba(52, 58, 64, 0.9);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            background-color: rgba(52, 58, 64, 0.9);
+            color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+@media (max-width: 576px) {
+    h1, h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .mosaic-container {
+        grid-template-columns: 1fr !important;
+        padding: 0 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 1rem !important;
+        margin: 1rem !important;
+    }
+}
+
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Contabilidad Computarizada</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 py-4 px-3 rounded shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="mt-5">Contabilidad Computarizada</h1>
+        <p>La contabilidad computarizada es la aplicación de sistemas informáticos y software especializado para
+            automatizar y optimizar los procesos contables de una organización.</p>
+
+        <div class="mosaic-container">
+            <div class="mosaic-item" data-aos="fade-left" data-aos-duration="1200">
+                <h2>Importancia</h2>
+                <p>Agiliza el registro de transacciones, mejora la precisión de los informes financieros y facilita el
+                    cumplimiento de las obligaciones fiscales.</p>
+            </div>
+
+            <div class="mosaic-item" data-aos="fade-right" data-aos-duration="1200">
+                <h2>Relación con la Contabilidad</h2>
+                <p>La contabilidad computarizada es una herramienta que potencia la contabilidad tradicional,
+                    permitiendo un manejo más eficiente y preciso de la información financiera.</p>
+            </div>
+
+            <div class="mosaic-item" data-aos="fade-left" data-aos-duration="1200">
+                <h2>Funciones</h2>
+                <ul>
+                    <li>Registro automatizado de transacciones.</li>
+                    <li>Generación de informes financieros en tiempo real.</li>
+                    <li>Control de inventario y activos fijos.</li>
+                    <li>Gestión de cuentas por cobrar y por pagar.</li>
+                </ul>
+            </div>
+
+            <div class="mosaic-item" data-aos="fade-right" data-aos-duration="1200">
+                <h2>Objetivos</h2>
+                <ul>
+                    <li>Optimizar los procesos contables.</li>
+                    <li>Reducir errores y mejorar la precisión.</li>
+                    <li>Facilitar la toma de decisiones financieras.</li>
+                    <li>Cumplir con las regulaciones contables y fiscales.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 data-aos="fade-right" data-aos-duration="1200">Archivos de Descarga</h2>
+
+        <div class="mosaic-container">
+            <div class="mosaic-item">
+                <a href="descargas/3 AIC Porras 170821 ponencia(1)_250410_172349.pdf" download>3 AIC Porras 170821
+                    ponencia(1)_250410_172349.pdf</a>
+                <p> Presentación sobre temas contables.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/A_Framework_for_Audit_Quality_finales.pdf" download>A_Framework_for_Audit_Quality_finales.pdf</a>
+                <p>Marco para la calidad de la auditoría.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/BOLETÍN FCCPV No. 0.pdf" download>BOLETÍN FCCPV No. 0.pdf</a>
+                <p>Boletín informativo sobre contabilidad.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/CDA-R19-03 (6).pdf" download>CDA-R19-03 (6).pdf</a>
+                <p> Normativa contable.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/El ensayo Guia APA Libro Azul versión final.pdf" download>El ensayo Guia APA Libro Azul versión final.pdf</a>
+                <p>Guía APA para la elaboración de ensayos.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/FDM Actividad Profesional_250410_172307.pdf" download>FDM Actividad Profesional_250410_172307.pdf</a>
+                <p>Documento sobre actividad profesional.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/FDM Actividad Profesional_250410_172307.pdf" download>FDM Actividad Profesional_250410_172307.pdf</a>
+                <p>Documento sobre actividad profesional.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/IAASB-ISQM-1-Fact-Sheet-esp-1_ok.pdf" download>IAASB-ISQM-1-Fact-Sheet-esp-1_ok.pdf</a>
+                <p>Hoja informativa sobre ISQM-1.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/Informacion financiera y no financiera.pdf" download>Informacion financiera y no financiera.pdf</a>
+                <p>Documento sobre información financiera y no financiera.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/ISQM-1-First-time-Implementation-Guide_ES_Secure.pdf" download>ISQM-1-First-time-Implementation-Guide_ES_Secure.pdf</a>
+                <p>Guía de implementación de ISQM-1.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/ISQM-2-First-time-Implementation-Guide_ES_Secure.pdf" download>ISQM-2-First-time-Implementation-Guide_ES_Secure.pdf</a>
+                <p>Guía de implementación de ISQM-2.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/Libro-Tecnologias-de-Informacion-en-Los-Negocios.pdf" download>Libro-Tecnologias-de-Informacion-en-Los-Negocios.pdf</a>
+                <p>Libro sobre tecnologías de la información en los negocios.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/Manual_de_Pronunciamientos_Internacionales_de_Control_de_Calidad.pdf" download>Manual_de_Pronunciamientos_Internacionales_de_Control_de_Calidad.pdf</a>
+                <p>Manual de pronunciamientos internacionales de control de calidad.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/Nociones-Fundamentales-sobre-Sistemas-de-Informacion-Empresarial.pdf" download>Nociones-Fundamentales-sobre-Sistemas-de-Informacion-Empresarial.pdf</a>
+                <p>Documento sobre sistemas de información empresarial.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/nuevo-informe-auditoria.pdf" download>nuevo-informe-auditoria.pdf</a>
+                <p>Documento sobre un nuevo informe de auditoría.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/plan_de_cuentas_ven-nif_version_2.pdf" download>plan_de_cuentas_ven-nif_version_2.pdf</a>
+                <p>Plan de cuentas VEN-NIF versión 2.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/R19 SAREN Cuaderno de Auditoria y Atestiguamiento_250410_183653.pdf" download>R19 SAREN Cuaderno de Auditoria y Atestiguamiento_250410_183653.pdf</a>
+                <p>Cuaderno de auditoría y atestiguamiento SAREN.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/SAREN 2020-.pdf" download>SAREN 2020-.pdf</a>
+                <p>Documento SAREN 2020.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/Sistema_Contable_Una_herramienta_de_gestion_en_las_250418_104557.pdf" download>Sistema_Contable_Una_herramienta_de_gestion_en_las_250418_104557.pdf</a>
+                <p>Documento sobre el sistema contable como herramienta de gestión.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/sistemas-de-informacic3b3n-gerencial-12va-edicic3b3n-kenneth-c-laudon.pdf" download>sistemas-de-informacic3b3n-gerencial-12va-edicic3b3n-kenneth-c-laudon.pdf</a>
+                <p>Libro sobre sistemas de información gerencial.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/TD_FranklinCarrilloAlvarez.pdf" download>TD_FranklinCarrilloAlvarez.pdf</a>
+                <p>Tesis de Franklin Carrillo Alvarez.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/computarizada01.pdf" download>trabajo de computarizada</a>
+                <p>Trabajo del tema 1.</p>
+            </div>
+            <div class="mosaic-item">
+                <a href="descargas/Presentación 01.pdf" download>mapa mental </a>
+                <p>Mapa mental del tema 1</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Contabilidad Computarizada. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
